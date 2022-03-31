@@ -99,7 +99,7 @@ mysql> DESCRIBE employee_payroll;
 mysql> INSERT INTO employee_payroll ( name, salary, start) VALUES
     -> ( 'Bill', 1000000.0, '2018-01-03' ),
     -> ( 'Terisa', 20000.0, '2020-05-21' ),
-    -> ( 'Suraj', 15000000.0, '2022-05-21' );
+    -> ( 'Akshay', 15000000.0, '2022-05-21' );
 Query OK, 3 rows affected (0.03 sec)
 Records: 3  Duplicates: 0  Warnings: 0
 
@@ -109,7 +109,7 @@ mysql> SELECT * FROM employee_payroll;
 +----+--------+----------+------------+
 |  1 | Bill   |  1000000 | 2018-01-03 |
 |  2 | Terisa |    20000 | 2020-05-21 |
-|  3 | Suraj  | 15000000 | 2022-05-21 |
+|  3 | Akshay  | 15000000 | 2022-05-21 |
 +----+--------+----------+------------+
 3 rows in set (0.01 sec)
 
@@ -157,11 +157,11 @@ mysql> SELECT * FROM employee_payroll;
 +----+--------+--------+----------+------------+
 |  1 | Bill   | NULL   |  1000000 | 2018-01-03 |
 |  2 | Terisa | F      |    20000 | 2020-05-21 |
-|  3 | Suraj  | NULL   | 15000000 | 2022-05-21 |
+|  3 | Akshay  | NULL   | 15000000 | 2022-05-21 |
 +----+--------+--------+----------+------------+
 3 rows in set (0.00 sec)
 
-mysql> update employee_payroll set gender = 'M' where name = 'Suraj';
+mysql> update employee_payroll set gender = 'M' where name = 'Akshay';
 Query OK, 1 row affected (0.00 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
@@ -171,7 +171,7 @@ mysql> SELECT * FROM employee_payroll;
 +----+--------+--------+----------+------------+
 |  1 | Bill   | NULL   |  1000000 | 2018-01-03 |
 |  2 | Terisa | F      |    20000 | 2020-05-21 |
-|  3 | Suraj  | M      | 15000000 | 2022-05-21 |
+|  3 | Akshay  | M      | 15000000 | 2022-05-21 |
 +----+--------+--------+----------+------------+
 3 rows in set (0.00 sec)
 
@@ -185,7 +185,7 @@ mysql> SELECT * FROM employee_payroll;
 +----+--------+--------+----------+------------+
 |  1 | Bill   | M      |  1000000 | 2018-01-03 |
 |  2 | Terisa | F      |    20000 | 2020-05-21 |
-|  3 | Suraj  | M      | 15000000 | 2022-05-21 |
+|  3 | Akshay  | M      | 15000000 | 2022-05-21 |
 +----+--------+--------+----------+------------+
 3 rows in set (0.00 sec)
 
@@ -199,7 +199,7 @@ mysql> SELECT * FROM employee_payroll;
 +----+--------+--------+----------+------------+
 |  1 | Bill   | M      |  1000000 | 2018-01-03 |
 |  2 | Terisa | F      |  2000000 | 2020-05-21 |
-|  3 | Suraj  | M      | 15000000 | 2022-05-21 |
+|  3 | Akshay  | M      | 15000000 | 2022-05-21 |
 +----+--------+--------+----------+------------+
 3 rows in set (0.01 sec)
 
